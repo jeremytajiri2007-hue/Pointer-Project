@@ -1,1 +1,28 @@
++-----------------+
+|      Task       |
++-----------------+
+| - id: int       |
+| - description: string |
+| - completed: bool     |
++-----------------+
+| + Task()       |
+| + Task(int, string)  |
+| + markCompleted()    |
+| + isCompleted(): bool|
+| + getId(): int       |
+| + getDescription(): string |
++-----------------+
+
++------------------------+
+|     TaskManager        |
++------------------------+
+| - tasks: unique_ptr<Task[]> |
+| - size: int             |
+| - capacity: int         |
++------------------------+
+| + TaskManager(int)      |
+| + addTask(string)       |
+| + removeTask(int)       |
+| + listTasks() const     |
++------------------------+
 
